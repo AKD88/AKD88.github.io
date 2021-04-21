@@ -1,0 +1,32 @@
+<html>
+<head>
+	 
+	<script type="text/javascript" src="jquery-3.6.0.js"></script>
+	<meta charset='utf-8'>
+	<script> 
+		$(document).ready(function(){
+			$("#fadeInBtn").click(function(){
+				$("#testBox").fadeIn('slow');
+			   });	
+			$("#fadeOutBtn").click(function(){
+				$("#testBox").fadeOut('slow');
+			});	
+		});	
+		
+	</script>
+	<style type="text/css">
+            #testBox{
+                width: 200px;
+                height: 200px;
+                background-color:#E8A8EF;
+                opacity: 1;
+            }
+	</style>
+    </head>
+
+    <body>
+        <button id="fadeInBtn">淡入</button>
+        <button id="fadeOutBtn">淡出</button>
+        <div id="testBox"></div>
+    </body>
+</html>
